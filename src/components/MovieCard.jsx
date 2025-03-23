@@ -2,7 +2,7 @@ import React from 'react'
 
 const MovieCard = ({ movie: {title, vote_average, poster_path, release_date, original_language} }) => {
   return (
-    <div className='movie-card'>
+    <div className='movie-card transition-all duration-300 ease-in-out hover:scale-103'>
       <img
         src={poster_path ?
           `https://image.tmdb.org/t/p/w500/${poster_path}` : '/no-movie.png'}
