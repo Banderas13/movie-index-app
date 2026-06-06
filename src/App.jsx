@@ -120,7 +120,32 @@ const App = () => {
             </ul>
           )}
         </section>
-        
+
+        <footer className='footer'>
+          <div className='footer-content'>
+            <p className='footer-title'>Movie Index</p>
+            <p className='footer-text'>
+              Discover trending and popular movies, powered by TMDB.
+            </p>
+          </div>
+          <div className='footer-credit'>
+            <p className='footer-text'>
+              Built &amp; maintained by{' '}
+              <a
+                href='https://castro-consultancy.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='footer-link'
+              >
+                Castro Consultancy
+              </a>
+            </p>
+            <p className='footer-copy'>
+              &copy; {new Date().getFullYear()} Castro Consultancy. All rights reserved.
+            </p>
+          </div>
+        </footer>
+
       </div>
     </main>
   )

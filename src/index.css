@@ -140,6 +140,30 @@
       @apply text-gray-100 font-medium text-base;
     }
   }
+
+  .footer {
+    @apply mt-12 pt-8 pb-10 border-t border-light-100/10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between;
+
+    & .footer-title {
+      @apply text-lg font-bold text-white;
+    }
+
+    & .footer-text {
+      @apply text-sm text-gray-100;
+    }
+
+    & .footer-link {
+      @apply text-light-200 font-semibold underline-offset-4 hover:text-light-100 hover:underline transition-colors;
+    }
+
+    & .footer-copy {
+      @apply mt-1 text-xs text-gray-100;
+    }
+
+    & .footer-credit {
+      @apply sm:text-right;
+    }
+  }
 }
 
 @utility text-gradient {
